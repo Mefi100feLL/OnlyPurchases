@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_edit_item"
+        android:icon="@drawable/ic_create_white_24dp"
+        android:title="@string/action_edit_item"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_remove_item"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:title="@string/action_remove_item"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_send_item"
+        android:icon="@drawable/ic_share_white_24dp"
+        android:title="@string/action_send_item"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_send_as_sms"
+                android:title="@string/action_send_as_sms"/>
+            <item
+                android:id="@+id/action_send_as_email"
+                android:title="@string/action_send_as_email"/>
+            <item
+                android:id="@+id/action_send_as_text"
+                android:title="@string/action_send_as_text"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="MaterialDrawerTheme.Light.DarkToolbar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="button_color">@color/accent</item>
+        <item name="button_colorPressed">@color/accent_dark</item>
+        <item name="android:navigationBarColor">@color/primary</item>
+
+        <item name="material_drawer_selected_text">@color/accent</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <item name="actionModeStyle">@style/Widget.ActionMode</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_clear_white_24dp</item>
+    </style>
+</resources>

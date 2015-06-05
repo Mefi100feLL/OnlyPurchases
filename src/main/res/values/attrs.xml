@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TintableImageView">
+        <attr name="tint" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialDateTimePicker">
+        <attr name="mdtp_accent_color" format="color|reference"/>
+        <attr name="mdtp_accent_color_dark" format="color|reference"/>
+    </declare-styleable>
+
+</resources>

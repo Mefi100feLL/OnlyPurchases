@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2014-06-24T22:04:39">
+<All>
+<_id>1</_id>
+<name>Йогурт</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>2</_id>
+<name>Камамбер</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>600</coast>
+</All>
+<All>
+<_id>3</_id>
+<name>Кефир</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>4</_id>
+<name>Майонез</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>5</_id>
+<name>Масло сливочное</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>70</coast>
+</All>
+<All>
+<_id>6</_id>
+<name>Молоко</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>7</_id>
+<name>Моцарелла</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>135</coast>
+</All>
+<All>
+<_id>8</_id>
+<name>Пармезан</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>450</coast>
+</All>
+<All>
+<_id>9</_id>
+<name>Рикотта</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>550</coast>
+</All>
+<All>
+<_id>10</_id>
+<name>Сгущенное молоко</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>11</_id>
+<name>Сливки</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>12</_id>
+<name>Сметана</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>13</_id>
+<name>Сыр</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>14</_id>
+<name>Сырки</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>15</coast>
+</All>
+<All>
+<_id>15</_id>
+<name>Творог</name>
+<category>Молочные изделия</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>16</_id>
+<name>Авокадо</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>17</_id>
+<name>Ананас</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>200</coast>
+</All>
+<All>
+<_id>18</_id>
+<name>Апельсины</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>19</_id>
+<name>Арбуз</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>15</coast>
+</All>
+<All>
+<_id>20</_id>
+<name>Баклажаны</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>110</coast>
+</All>
+<All>
+<_id>21</_id>
+<name>Бананы</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>55</coast>
+</All>
+<All>
+<_id>22</_id>
+<name>Виноград</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>90</coast>
+</All>
+<All>
+<_id>23</_id>
+<name>Грибы</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>105</coast>
+</All>
+<All>
+<_id>24</_id>
+<name>Груши</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>65</coast>
+</All>
+<All>
+<_id>25</_id>
+<name>Дыня</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>26</_id>
+<name>Зелень</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>27</_id>
+<name>Имбирь</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>120</coast>
+</All>
+<All>
+<_id>28</_id>
+<name>Кабачки</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>95</coast>
+</All>
+<All>
+<_id>29</_id>
+<name>Капуста</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>30</_id>
+<name>Картофель</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>31</_id>
+<name>Кинза</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>32</_id>
+<name>Лимон</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>33</_id>
+<name>Лук</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>34</_id>
+<name>Морковь</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>35</coast>
+</All>
+<All>
+<_id>35</_id>
+<name>Нектарины</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>36</_id>
+<name>Овощи</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>37</_id>
+<name>Огурцы</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>38</_id>
+<name>Паштет</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>39</_id>
+<name>Перец</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>65</coast>
+</All>
+<All>
+<_id>40</_id>
+<name>Персики</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>70</coast>
+</All>
+<All>
+<_id>41</_id>
+<name>Петрушка</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>42</_id>
+<name>Помидоры</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>43</_id>
+<name>Редис</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>65</coast>
+</All>
+<All>
+<_id>44</_id>
+<name>Салат</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>45</_id>
+<name>Свекла</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>46</_id>
+<name>Сливы</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>55</coast>
+</All>
+<All>
+<_id>47</_id>
+<name>Укроп</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>48</_id>
+<name>Фрукты</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>49</_id>
+<name>Хрен</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>50</_id>
+<name>Хурма</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>51</_id>
+<name>Чеснок</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>52</_id>
+<name>Шампиньоны</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>105</coast>
+</All>
+<All>
+<_id>53</_id>
+<name>Яблоки</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>54</_id>
+<name>Ягоды</name>
+<category>Овощи, фрукты, ягоды</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>55</_id>
+<name>Батарейки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>56</_id>
+<name>Бумажные полотенца</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>57</_id>
+<name>Ватные диски</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>58</_id>
+<name>Ватные палочки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>59</_id>
+<name>Влажные салфетки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>60</_id>
+<name>Гель для душа</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>61</_id>
+<name>Губки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>62</_id>
+<name>Дезодорант</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>63</_id>
+<name>Жидкое мыло</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>64</_id>
+<name>Зубная паста</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>70</coast>
+</All>
+<All>
+<_id>65</_id>
+<name>Зубная щетка</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>80</coast>
+</All>
+<All>
+<_id>66</_id>
+<name>Зубочистки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>67</_id>
+<name>Лампочки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>68</_id>
+<name>Мыло</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>69</_id>
+<name>Пакеты для мусора</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>70</_id>
+<name>Памперсы</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>71</_id>
+<name>Перчатки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>72</_id>
+<name>Прокладки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>73</_id>
+<name>Салфетки</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>74</_id>
+<name>Стиральный порошок</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>75</_id>
+<name>Туалетная бумага</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>76</_id>
+<name>Фольга</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>77</_id>
+<name>Шампунь</name>
+<category>Бытовые товары</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>78</_id>
+<name>Базилик</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>79</_id>
+<name>Горох</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>80</_id>
+<name>Горчица</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>81</_id>
+<name>Гречка</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>82</_id>
+<name>Дрожжи</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>83</_id>
+<name>Зеленый горошек</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>84</_id>
+<name>Изюм</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>80</coast>
+</All>
+<All>
+<_id>85</_id>
+<name>Каша</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>70</coast>
+</All>
+<All>
+<_id>86</_id>
+<name>Кетчуп</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>87</_id>
+<name>Кофе</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>88</_id>
+<name>Кукуруза</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>120</coast>
+</All>
+<All>
+<_id>89</_id>
+<name>Лавровый лист</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>90</_id>
+<name>Макароны</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>91</_id>
+<name>Масло оливковое</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>92</_id>
+<name>Масло подсолнечное</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>90</coast>
+</All>
+<All>
+<_id>93</_id>
+<name>Масло растительное</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>70</coast>
+</All>
+<All>
+<_id>94</_id>
+<name>Мука</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>95</_id>
+<name>Овсянка</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>70</coast>
+</All>
+<All>
+<_id>96</_id>
+<name>Оливки</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>110</coast>
+</All>
+<All>
+<_id>97</_id>
+<name>Орехи</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>200</coast>
+</All>
+<All>
+<_id>98</_id>
+<name>Рис</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>99</_id>
+<name>Сахар</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>100</_id>
+<name>Семечки</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>35</coast>
+</All>
+<All>
+<_id>101</_id>
+<name>Соевый соус</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>102</_id>
+<name>Соль</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>15</coast>
+</All>
+<All>
+<_id>103</_id>
+<name>Специи</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>104</_id>
+<name>Сухарики</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>105</_id>
+<name>Томатная паста</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>106</_id>
+<name>Уксус</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>40</coast>
+</All>
+<All>
+<_id>107</_id>
+<name>Фасоль</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>80</coast>
+</All>
+<All>
+<_id>108</_id>
+<name>Фисташки</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>35</coast>
+</All>
+<All>
+<_id>109</_id>
+<name>Хлопья</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>110</_id>
+<name>Чай</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>111</_id>
+<name>Чернослив</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>80</coast>
+</All>
+<All>
+<_id>112</_id>
+<name>Чипсы</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>113</_id>
+<name>Шпроты</name>
+<category>Бакалея</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>114</_id>
+<name>Бекон</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>300</coast>
+</All>
+<All>
+<_id>115</_id>
+<name>Ветчина</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>350</coast>
+</All>
+<All>
+<_id>116</_id>
+<name>Говядина</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>350</coast>
+</All>
+<All>
+<_id>117</_id>
+<name>Икра</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>600</coast>
+</All>
+<All>
+<_id>118</_id>
+<name>Индейка</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>200</coast>
+</All>
+<All>
+<_id>119</_id>
+<name>Колбаса</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>400</coast>
+</All>
+<All>
+<_id>120</_id>
+<name>Крабовые палочки</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>55</coast>
+</All>
+<All>
+<_id>121</_id>
+<name>Креветки</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>122</_id>
+<name>Курица</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>123</_id>
+<name>Мясо</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>400</coast>
+</All>
+<All>
+<_id>124</_id>
+<name>Пельмени</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>125</_id>
+<name>Рыба</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>200</coast>
+</All>
+<All>
+<_id>126</_id>
+<name>Свинина</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>300</coast>
+</All>
+<All>
+<_id>127</_id>
+<name>Сельдь</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>100</coast>
+</All>
+<All>
+<_id>128</_id>
+<name>Сосиски</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>129</_id>
+<name>Фарш</name>
+<category>Мясные и рыбные продукты</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>200</coast>
+</All>
+<All>
+<_id>130</_id>
+<name>Батон</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>20</coast>
+</All>
+<All>
+<_id>131</_id>
+<name>Вода</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>25</coast>
+</All>
+<All>
+<_id>132</_id>
+<name>Замороженные овощи</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>60</coast>
+</All>
+<All>
+<_id>133</_id>
+<name>Квас</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>134</_id>
+<name>Кола</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>135</_id>
+<name>Конфеты</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>200</coast>
+</All>
+<All>
+<_id>136</_id>
+<name>Лаваш</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>30</coast>
+</All>
+<All>
+<_id>137</_id>
+<name>Лимонад</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>45</coast>
+</All>
+<All>
+<_id>138</_id>
+<name>Мороженое</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>50</coast>
+</All>
+<All>
+<_id>139</_id>
+<name>Печенье</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>кг</edizm>
+<coast>150</coast>
+</All>
+<All>
+<_id>140</_id>
+<name>Сок</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>65</coast>
+</All>
+<All>
+<_id>141</_id>
+<name>Торт</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>250</coast>
+</All>
+<All>
+<_id>142</_id>
+<name>Хлеб</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>20</coast>
+</All>
+<All>
+<_id>143</_id>
+<name>Хлеб белый</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>25</coast>
+</All>
+<All>
+<_id>144</_id>
+<name>Хлеб черный</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>20</coast>
+</All>
+<All>
+<_id>145</_id>
+<name>Шоколад</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>65</coast>
+</All>
+<All>
+<_id>146</_id>
+<name>Яйца</name>
+<category>Другое</category>
+<count>1</count>
+<edizm>шт</edizm>
+<coast>60</coast>
+</All>
+</dataroot>

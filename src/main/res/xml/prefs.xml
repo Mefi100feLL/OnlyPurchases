@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="style"
+        android:title="@string/prefs_view"
+        android:persistent="false">
+
+        <Preference
+            android:key="colorPrimary"
+            android:title="@string/prefs_color_primary" />
+
+        <Preference
+            android:key="colorAccent"
+            android:title="@string/prefs_color_accent" />
+
+        <CheckBoxPreference
+            android:key="replacebuyed"
+            android:title="@string/prefs_replace_buyed"
+            android:defaultValue="true"
+            android:summary="@string/prefs_replace_buyed_to_end"/>
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:key="sortlistitem"
+            android:summary="@string/prefs_default_sort"
+            android:title="@string/prefs_sort_listitems"
+            android:entries="@array/sortarray"
+            android:entryValues="@array/sortarray"
+            android:defaultValue="@string/prefs_default_sort_listitem_one"/>
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:defaultValue="@string/prefs_default_sort_list_one"
+            android:entries="@array/sorts_of_list"
+            android:entryValues="@array/sorts_of_list"
+            android:key="sort_list"
+            android:summary="@string/prefs_default_sort"
+            android:title="@string/prefs_sort_lists" />
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:key="listsize"
+            android:summary="@string/prefs_text_size_summary"
+            android:title="@string/prefs_text_size"
+            android:entries="@array/sizes"
+            android:entryValues="@array/sizes"
+            android:defaultValue="@string/prefs_default_size_text" />
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:key="listsizesmall"
+            android:summary="@string/prefs_text_size_summary_small"
+            android:title="@string/prefs_text_size_small"
+            android:entries="@array/sizes"
+            android:entryValues="@array/sizes"
+            android:defaultValue="@string/prefs_default_size_text_small" />
+
+        <CheckBoxPreference
+            android:key="showcategories"
+            android:title="@string/prefs_show_categories"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="list"
+        android:persistent="false"
+        android:title="@string/prefs_functions_of_list">
+
+        <Preference
+            android:key="currency"
+            android:summary="@string/prefs_default_currency"
+            android:title="@string/prefs_currency" />
+
+        <Preference
+            android:key="unit"
+            android:summary="@string/prefs_default_unit"
+            android:title="@string/prefs_unit" />
+
+        <Preference
+            android:key="categories"
+            android:title="@string/prefs_categories_of_products"/>
+
+        <Preference
+            android:key="shopes"
+            android:title="@string/prefs_shops" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="sale"
+        android:persistent="false"
+        android:title="@string/prefs_sales" >
+
+        <Preference
+            android:key="city"
+            android:title="@string/prefs_region" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="program"
+        android:persistent="false"
+        android:title="@string/prefs_program" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="displaynooff"
+            android:title="@string/prefs_display_no_off" />
+
+        <Preference
+            android:key="about"
+            android:title="@string/prefs_about" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

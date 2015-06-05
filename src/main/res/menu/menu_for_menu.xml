@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <item
+        android:id="@+id/action_load_list"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_load_list"
+        android:icon="@drawable/ic_inbox_white_24dp"/>
+
+    <item
+        android:id="@+id/action_help"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_help"
+        android:icon="@drawable/ic_help_white_24dp"/>
+
+</menu>

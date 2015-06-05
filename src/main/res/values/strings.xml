@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Покупки</string>
+
+    <string name="menu_sales">Акции</string>
+    <string name="menu_lists">Списки</string>
+	<string name="menu_all_products">Все товары</string>
+    <string name="menu_settings">Настройки</string>
+    
+    
+    <string name="action_new_list">Создать список</string>
+    <string name="action_sales">Акции</string>
+    <string name="action_sort">Сортировка</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_change_list">Изменить</string>
+    <string name="action_remove_list">Удалить</string>
+    <string name="action_send_list">Отправить</string>
+    <string name="action_alarm">Напоминание</string>
+    <string name="action_load_list">Загрузить из SMS</string>
+    <string name="action_cancel">Отмена</string>
+    <string name="action_all_products">Все товары</string>
+    <string name="action_filter">Фильтр</string>
+	<string name="action_to_favorite">В избранные</string>
+	<string name="action_from_favorite">Из избранных</string>
+	<string name="action_filter_favorite">Избранные</string>
+	<string name="action_filter_all">Все</string>
+    
+    <string name="action_send_as_sms">по SMS</string>
+    <string name="action_send_as_email">по email</string>
+    <string name="action_send_as_text">как текст</string>
+    
+    <string name="action_sort_by_abc">По алфавиту</string>
+    <string name="action_sort_by_category">По категориям</string>
+    <string name="action_sort_by_favorite">Избранные</string>
+    
+    <string name="action_add_new_item">Добавить товар</string>
+    <string name="action_edit_item">Изменить</string>
+    <string name="action_remove_item">Удалить</string>
+    <string name="action_send_item">Отправить</string>
+
+
+
+    <string name="notify_time_to_shopping">Пора идти за покупками</string>
+    <string name="notify_no_sms">Не найдено ни одного SMS</string>
+	<string name="notify_listitem_already_exists">Такой товар уже есть в списке</string>
+	<string name="notify_no_application_for_record_voice">Нет приложения для синтеза речи</string>
+	<string name="notify_enter_name_of_listitem">Введите наименование товара</string>
+	<string name="notify_listitem_are_deleted">Товар был удален из списка</string>
+	<string name="notify_list_is_empty">Список пуст</string>
+	<string name="notify_bad_sms">Неверный формат SMS</string>
+	<string name="notify_new_shopping_list">Новый список</string>
+	<string name="notify_new_shopping_list_on_sms_from">Список по SMS от:</string>
+	<string name="notify_enter_name_of_list">Введите имя списка</string>
+	<string name="notify_no_selected_lists">Списки не выбраны</string>
+	<string name="notify_added_in_list">Добавлено в список:</string>
+	<string name="notify_already_exists_in_list">Уже есть в списке:</string>
+	<string name="notify_no_entered_name_of_list">Не введено имя списка</string>
+	<string name="notify_enter_name_of_category">Не введено имя категории</string>
+	<string name="notify_no_selected_sms">Не выбрано SMS</string>
+
+
+    <string name="content_name_of_listitem">Наименование</string>
+    <string name="content_count_of_listitem">Кол-во</string>
+    <string name="content_edizm_of_listitem">Ед. измерения</string>
+    <string name="content_coast_of_listitem">Цена</string>
+    <string name="content_category_of_listitem">Категория</string>
+    <string name="content_shop_of_listitem">Магазин</string>
+    <string name="content_comment_of_listitem">Комментарий</string>
+	<string name="content_important_of_listitem">Важное</string>
+    <string name="content_total_buyed">Итого куплено на:</string>
+	<string name="content_total">Итого товаров - %0, на:</string>
+	<string name="content_select_app_for_sending">Отправить через:</string>
+	<string name="content_product_favorite">Избранное</string>
+
+
+	
+	<string name="dialog_currency">Валюта: </string>
+	<string name="dialog_new_list">Имя списка</string>
+	<string name="dialog_select_list">Выбор списков</string>
+	<string name="dialog_create">СОЗДАТЬ</string>
+	<string name="dialog_send">ОТПРАВИТЬ</string>
+	<string name="dialog_add">ДОБАВИТЬ</string>
+	<string name="dialog_cancel">ОТМЕНА</string>
+	<string name="dialog_change">ИЗМЕНИТЬ</string>
+	<string name="dialog_select">ВЫБРАТЬ</string>
+	<string name="dialog_select_sms">Выберите SMS</string>
+	<string name="dialog_reading_sms">Загрузка SMS</string>
+	<string name="dialog_title_new_list">Новый список</string>
+	<string name="dialog_title_edit_list">Изменение списка</string>
+	<string name="dialog_title_alarm">Напоминание</string>
+	<string name="dialog_title_remove_list">Удаление списка</string>
+	<string name="dialog_title_send_list">Отправить список:</string>
+	<string name="dialog_remove">УДАЛИТЬ</string>
+	<string name="dialog_save">СОХРАНИТЬ</string>
+	<string name="dialog_alarm_remove">УДАЛИТЬ</string>
+	<string name="dialog_in_list">В СПИСОК</string>
+	<string name="dialog_enter_new_unit_name">Единица измерения</string>
+	<string name="dialog_are_you_sure_to_remove_list">Вы уверены, что хотите удалить список?</string>
+	<string name="dialog_no_lists">Нет списков</string>
+	<string name="dialog_are_create_new_list">Создать новый список?</string>
+	<string name="dialog_name_of_category">Наименование категории</string>
+	<string name="dialog_title_new_category">Новая категория</string>
+	<string name="dialog_title_editing_category">Категория</string>
+
+	
+	<string name="string_no_shop">Нет магазина</string>
+	<string name="string_no_category">Нет категории</string>
+	<string name="string_add_currency">Добавить валюту</string>
+	<string name="string_new_currency">Новая валюта</string>
+	<string name="string_currency_name">Наименование валюты</string>
+	<string name="string_new_shop">Новый магазин</string>
+	<string name="string_editing_shop">Редактирование магазина</string>
+	<string name="string_shop_name">Наименование магазина</string>
+	<string name="string_add_unit">Добавить ед. измерения</string>
+	<string name="string_new_unit">Новая ед. измерения</string>
+	<string name="string_unit_name">Наименование ед. измерения</string>
+	<string name="string_category">Категория</string>
+	<string name="string_po">по</string>
+	<string name="string_lists">Списки</string>
+	<string name="string_buyed">куплено</string>
+	<string name="string_important">обязательно</string>
+	<string name="string_in">в</string>
+	<string name="string_removed_list">Список удален</string>
+	<string name="string_removed_elements">Удалено товаров:</string>
+	<string name="string_removed">Удалён:</string>
+	<string name="string_undo">Отмена</string>
+	<string name="string_all_shops">Все магазины</string>
+	<string name="string_total_items">Итого:</string>
+	<string name="string_coast_za_ed">Цена за</string>
+	<string name="string_list_of_products_clear">Список товаров пуст</string>
+	<string name="string_list_of_favorite_clear">Нет избранных</string>
+	<string name="string_coast_za">за</string>
+	<string name="string_in_shop">в</string>
+	<string name="string_cancel">Отмена</string>
+	<string name="string_ok">OK</string>
+	<string name="string_all_products">Все товары</string>
+	<string name="string_count_of_sales">Акций:</string>
+	<string name="string_all">Все</string>
+	<string name="string_favorites">Избранные</string>
+	<string name="string_no_lists">Нет списков</string>
+	<string name="string_empty_list">Нет товаров в списке</string>
+	<string name="string_no_shopes">Нет магазинов</string>
+	<string name="string_no_favorite_shopes">Нет избранных магазинов</string>
+	<string name="string_no_internet_connection">Нет соединения с Интернет</string>
+	<string name="string_no_sales">Нет акций</string>
+	<string name="string_select_city">Выберите регион</string>
+	<string name="string_to_select_city">Выбрать регион</string>
+	<string name="prefs_default_sort_list_one">по имени</string>
+	<string name="string_shoping_list">Список покупок</string>
+	<string name="string_list_for_widget">Список для виджета</string>
+	
+	
+	<string name="default_unit_one">шт</string>
+	<string name="default_unit_two">кг</string>
+	<string name="default_unit_three">литр</string>
+	<string name="default_unit_four">гр</string>
+	<string name="default_unit_five">мл</string>
+	
+	<string name="default_one_currency">RUB</string>
+	<string name="default_two_currency">USD</string>
+	<string name="default_three_currency">EUR</string>
+	
+	<string name="default_categ_one">Мясные и рыбные продукты</string>
+	<string name="default_categ_two">Овощи, фрукты, ягоды</string>
+	<string name="default_categ_three">Молочные изделия</string>
+	<string name="default_categ_four">Бакалея</string>
+	<string name="default_categ_five">Бытовые товары</string>
+	<string name="default_categ_six">Другое</string>
+	
+	
+	<string name="prefs_view_of_list">Вид списка</string>
+	<string name="prefs_replace_buyed">Купленный в конец</string>
+	<string name="prefs_replace_buyed_to_end">Перемещать купленный товар в конец списка</string>
+	<string name="prefs_sort_listitems">Сортировать товары</string>
+	<string name="prefs_sort_lists">Сортировать списки</string>
+	<string name="prefs_default_sort">Текущая сортировка -</string>
+	<string name="prefs_text_size">Основной шрифт</string>
+	<string name="prefs_text_size_summary">Размер названия товара - </string>
+	<string name="prefs_text_size_small">Второстепенный шрифт</string>
+	<string name="prefs_text_size_summary_small">Размер свойств товара - </string>
+	<string name="prefs_show_categories">Показывать категории</string>
+	<string name="prefs_categories_of_products">Категории продуктов</string>
+	<string name="prefs_color_accent">Цвет акцента</string>
+	<string name="prefs_color_navigation_bar">Цвет панели навигации</string>
+	<string name="prefs_color_primary_dark">Цвет статус панели</string>
+	<string name="prefs_color_primary">Основной цвет</string>
+	<string name="prefs_view">Внешний вид</string>
+	<string name="prefs_default_sort_list_two">по дате создания</string>
+	
+	<string name="prefs_functions_of_list">Функции списка</string>
+	<string name="prefs_currency">Валюты</string>
+	<string name="prefs_default_currency">Валюта по-умолчанию - </string>
+	<string name="prefs_unit">Единицы измерения</string>
+	<string name="prefs_default_unit">Единица по-умолчанию - </string>
+	<string name="prefs_shops">Магазины</string>
+	
+	<string name="prefs_sales">Акции</string>
+	<string name="prefs_region">Регион</string>
+	<string name="prefs_select_shops">Магазины</string>
+	<string name="prefs_prod_categ">Категории продтоваров</string>
+	<string name="prefs_prom_categ">Категории промтоваров</string>
+	
+	<string name="prefs_program">Программа</string>
+	<string name="prefs_display_no_off">Не гасить экран</string>
+	<string name="prefs_about">О программе</string>	
+	
+	<string name="prefs_default_size_text">16</string>
+	<string name="prefs_default_size_text_small">14</string>
+	
+	<string name="prefs_default_sort_listitem_one">по алфавиту (А-Я)</string>
+	<string name="prefs_default_sort_listitem_two">по алфавиту (Я-А)</string>
+	<string name="prefs_default_sort_listitem_three">по добавлению</string>
+	<string name="notify_enter_name_of_currency">Введите наименование валюты</string>
+	<string name="notify_currency_exists">Такая валюта уже есть</string>
+	<string name="notify_enter_name_of_unit">Введите единицу измерения</string>
+	<string name="notify_unit_exists">Такая единица уже есть</string>
+	<string name="notify_enter_name_of_shop">Введите имя магазина</string>
+	<string name="notify_shop_exists">Такой магазин уже есть</string>
+	<string name="string_app_name">Скидки и акции (Покупки по акциям)</string>
+	<string name="string_app_version">Версия:</string>
+	<string name="string_app_developer">Разработчик: Попсуенко Александр</string>
+	<string name="string_app_description">Приложение позволяет просматривать акции и скидки крупных магазинов и супермаркетов, а также создавать и работать со списками покупок</string>
+	<string name="string_app_functions">Основной функционал:\n
+		- загрузка, просмотр и отправка акций в список;\n
+		- добавление магазинов в избранные;\n
+		- создание, изменение списков покупок;\n
+		- отправка списка по SMS, эл. почте;\n
+		- установка напоминания для списка;\n
+		- автоматическое добавление списка из пришедших SMS;\n
+		- быстрое добавление товара в список спомощью подсказок или выбора из всех товаров;\n
+		- редактирование списка всех товаров, включая избранные;\n
+		- широкий спектр настроек, включая выбор основных цветов приложения
+	</string>
+	<string name="action_help">Справка</string>
+	<string name="string_help">Справка</string>
+	<string name="string_help_shopes"><b>Вы находитесь в разделе с магазинами</b>\n\n<b>Регион</b>\nВыберите регион, для которого хотите загрузить доступные магазины. В дальнейшем его можно изменить в настройках\n\n<b>Избранные магазины</b>\nЗагруженные магазины можно добавлять и удалять из избранных, нажав на звездочку, чтобы не просматривать полный список каждый раз\n\n<b>Фильтр магазинов</b>\nСлева от значка справки находится фильтр, с помощью которого можно посмотреть все магазины региона или только избранные\n\n<b>Выбор магазина</b>\nНажмите на магазин, чтобы просмотреть акции, которые в нем проводятся</string>
+	<string name="string_help_sales"><b>Вы находитесь в магазине</b>\n\n<b>Нет акций</b>\nЕсли в центре экрана написано, что акций нет, то возможно, в данный момент магазин не проводит никаких акций\n\n<b>Картинки акций</b>\nКартинки акций подгружаются, если видны на экране. Соответственно без интернета будут отображаться только загруженные ранее картинки\n\n<b>Дополнительная информация</b>\nНажмите на картинку, чтобы увеличить её и просмотреть дополнительную информацию. Чтобы свернуть информацию, снова нажмите на картинку или аппаратную кнопку \"Назад\".\nДополнительная информация подгружается в момент просмотра акции. Поэтому, при отсутствии интернета будут отображаться только название акции, магазин и период\n\n<b>Отправить в список</b>\nЧтобы отправить акционный товар в список покупок, нажмите на кнопку с тележкой. Выберите списки, при необходимости отредактируйте информацию о товаре и нажмите \"Отправить\"</string>
+	<string name="string_help_menu"><b>Вы находитесь в меню со списками</b>\n\n<b>Добавление списка</b>\nНажмите на кнопку с плюсом, чтобы добавить новый список. Введите имя, выберите валюту и новый список откроется для работы.\nЧтобы добавить список из SMS, нажмите на кнопку слева от справки. Выберите SMS и нажмите \"OK\"\n\n<b>Работа со списком</b>\nЧтобы открыть список, нажмите на него\n\n<b>Меню списка</b>\nНажмите на троеточие, справа от названия списка. Появится меню для работы с ним. Вы можете изменить, удалить, отправить список, или установить напоминание\n\n<b>Список по эл. почте</b>\nЕсли Вам пришел список по эл. почте, то нажмите на прилагаемый файл и список появится в приложении</string>
+	<string name="string_help_list"><b>Вы находитесь в списке покупок</b>\n\n<b>Добавление товара</b>\nДобавить товар можно двумя способами:\n1) нажав кнопку с плюсом, введя информацию о товаре и снова нажав на кнопку с плюсом;\n2) также можно быстро заполнить список, нажав на кнопку слева от троеточия. Откроется окно со списком всех товаров(этот список можно редактировать в разделе \"Все товары\"), выбрать нужные, указать количество и нажать на галочку\n\n<b>Редактирование товаров</b>\nЧтобы вычеркнуть товар, просто нажмите на него.\nЧтобы запустить контекстное меню, нажмите на любой товар и удерживайте. Если выбран один товар, то его можно редактировать. Независимо от количества выбранных товаров, их можно удалить или отправить\n\nС текущим списком можно выполнить те же действия, что и в меню\n\nЗагрузка из SMS не создает новый список, а добавляет найденные товары в текущий</string>
+	<string name="string_help_products"><b>Вы находитесь в списке всех товаров</b>\nВ списке покупок можно быстро добавить товары, выбрав из всех. В этом разделе можно редактировать список всех товаров\n\n<b>Фильтр товаров</b>\nС помощью фильтра, который находится слева от справки, можно просматривать товары:\n- по алфавиту;\n- по категориям;\n- избранные\n\n<b>Добавление товара</b>\nЧтобы добавить новый товар, нажмите на плавающую кнопку с плюсом\n\n<b>Редактирование товара</b>\nЧтобы вызвать меню товара, нажмите на троеточие справа от названия. Товар можно изменить, удалить и добавить/удалить из избранных</string>
+</resources>

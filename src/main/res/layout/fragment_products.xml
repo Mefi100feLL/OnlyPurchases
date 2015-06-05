@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/fragment_products_textview_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="16dp"
+        android:drawableTop="@drawable/ic_no_lists"
+        android:gravity="center"
+        android:text="@string/string_no_lists"
+        android:textColor="@color/primary_text"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/fragment_products_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_products_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:scrollbars="vertical"
+        android:visibility="invisible"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_products_layout_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/fragment_products_fields_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/fragment_products_layout_snackbar"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/content_product_fields" />
+    </LinearLayout>
+
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/fragment_products_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/fragment_products_layout_snackbar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        fab:image="@drawable/ic_add_white_24dp" />
+
+</RelativeLayout>

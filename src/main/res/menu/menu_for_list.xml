@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_all_items"
+        app:showAsAction="always"
+        android:title="@string/action_all_products"
+        android:icon="@drawable/ic_view_list_white_24dp"/>
+    
+    <item
+        android:id="@+id/action_filter"
+        app:showAsAction="always"
+        android:title="@string/action_filter" 
+        android:icon="@drawable/ic_filter_list_white_24dp">
+        
+        <menu>
+            <group android:checkableBehavior="single" >
+                
+            </group>
+        </menu>
+        
+    </item>    
+    
+    <item
+        android:id="@+id/action_change_list"
+        app:showAsAction="never"
+        android:title="@string/action_change_list"/>
+    
+    <item
+        android:id="@+id/action_remove_list"
+        app:showAsAction="never"
+        android:title="@string/action_remove_list"/>
+    
+    <item
+        android:id="@+id/action_send_list"
+        app:showAsAction="never"
+        android:title="@string/action_send_list"/>
+    
+    <item
+        android:id="@+id/action_load_list"
+        app:showAsAction="never"
+        android:title="@string/action_load_list"/>
+    
+    <item
+        android:id="@+id/action_put_alarm"
+        app:showAsAction="never"
+        android:title="@string/action_alarm"/>
+
+    <item
+        android:id="@+id/action_help"
+        app:showAsAction="never"
+        android:title="@string/action_help"
+        android:icon="@drawable/ic_help_white_24dp"/>
+
+</menu>

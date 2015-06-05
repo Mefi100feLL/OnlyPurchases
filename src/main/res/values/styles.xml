@@ -1,0 +1,339 @@
+<resources>
+
+    <style name="AppTheme" parent="MaterialDrawerTheme.Light.DarkToolbar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="button_color">@color/accent</item>
+        <item name="button_colorPressed">@color/accent_dark</item>
+        <item name="rippleEffect_enabled">true</item>
+        <item name="type">DEFAULT</item>
+
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+        <item name="actionModeStyle">@style/Widget.ActionMode</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_clear_white_24dp</item>
+
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_icons">@color/material_drawer_icons</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_text">@color/accent</item>
+        <item name="material_drawer_header_selection_text">@color/material_drawer_header_selection_text</item>
+    </style>
+
+    <style name="Widget.ActionMode" parent="@style/Widget.AppCompat.ActionMode">
+        <item name="titleTextStyle">@style/TitleTextStyle</item>
+    </style>
+
+    <style name="TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="SaleTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="RedTheme" parent="AppTheme">
+        <item name="button_color">@color/md_red_500</item>
+        <item name="button_colorPressed">@color/md_red_700</item>
+
+        <item name="colorPrimary">@color/md_red_500</item>
+        <item name="colorPrimaryDark">@color/md_red_700</item>
+        <item name="colorAccent">@color/md_red_500</item>
+        <item name="material_drawer_selected_text">@color/md_red_500</item>
+    </style>
+
+    <style name="IndigoTheme" parent="AppTheme">
+        <item name="button_color">@color/md_indigo_500</item>
+        <item name="button_colorPressed">@color/md_indigo_700</item>
+
+        <item name="colorPrimary">@color/md_indigo_500</item>
+        <item name="colorPrimaryDark">@color/md_indigo_700</item>
+        <item name="colorAccent">@color/md_indigo_500</item>
+        <item name="material_drawer_selected_text">@color/md_indigo_500</item>
+    </style>
+
+    <style name="GreyTheme" parent="AppTheme">
+        <item name="button_color">@color/md_grey_500</item>
+        <item name="button_colorPressed">@color/md_grey_700</item>
+
+        <item name="colorPrimary">@color/md_grey_500</item>
+        <item name="colorPrimaryDark">@color/md_grey_700</item>
+        <item name="colorAccent">@color/md_grey_500</item>
+        <item name="material_drawer_selected_text">@color/md_grey_500</item>
+    </style>
+
+    <style name="GreyDarkTheme" parent="AppTheme">
+        <item name="button_color">@color/md_grey_800</item>
+        <item name="button_colorPressed">@color/md_grey_900</item>
+
+        <item name="colorPrimary">@color/md_grey_800</item>
+        <item name="colorPrimaryDark">@color/md_grey_900</item>
+        <item name="colorAccent">@color/md_grey_800</item>
+        <item name="material_drawer_selected_text">@color/md_grey_800</item>
+    </style>
+
+    <style name="BlackTheme" parent="AppTheme">
+        <item name="button_color">@color/md_black_1000</item>
+        <item name="button_colorPressed">@color/md_black_1000</item>
+
+        <item name="colorPrimary">@color/md_black_1000</item>
+        <item name="colorPrimaryDark">@color/md_black_1000</item>
+        <item name="colorAccent">@color/md_black_1000</item>
+        <item name="material_drawer_selected_text">@color/md_black_1000</item>
+    </style>
+
+    <style name="BlueGreyTheme" parent="AppTheme">
+        <item name="button_color">@color/md_blue_grey_500</item>
+        <item name="button_colorPressed">@color/md_blue_grey_700</item>
+
+        <item name="colorPrimary">@color/md_blue_grey_500</item>
+        <item name="colorPrimaryDark">@color/md_blue_grey_700</item>
+        <item name="colorAccent">@color/md_blue_grey_500</item>
+        <item name="material_drawer_selected_text">@color/md_blue_grey_500</item>
+    </style>
+
+    <style name="BrownTheme" parent="AppTheme">
+        <item name="button_color">@color/md_brown_500</item>
+        <item name="button_colorPressed">@color/md_brown_700</item>
+
+        <item name="colorPrimary">@color/md_brown_500</item>
+        <item name="colorPrimaryDark">@color/md_brown_700</item>
+        <item name="colorAccent">@color/md_brown_500</item>
+        <item name="material_drawer_selected_text">@color/md_brown_500</item>
+    </style>
+
+    <style name="PinkTheme" parent="AppTheme">
+        <item name="button_color">@color/md_pink_500</item>
+        <item name="button_colorPressed">@color/md_pink_700</item>
+
+        <item name="colorPrimary">@color/md_pink_500</item>
+        <item name="colorPrimaryDark">@color/md_pink_700</item>
+        <item name="colorAccent">@color/md_pink_500</item>
+        <item name="material_drawer_selected_text">@color/md_pink_500</item>
+    </style>
+
+    <style name="PurpleTheme" parent="AppTheme">
+        <item name="button_color">@color/md_purple_500</item>
+        <item name="button_colorPressed">@color/md_purple_700</item>
+
+        <item name="colorPrimary">@color/md_purple_500</item>
+        <item name="colorPrimaryDark">@color/md_purple_700</item>
+        <item name="colorAccent">@color/md_purple_500</item>
+        <item name="material_drawer_selected_text">@color/md_purple_500</item>
+    </style>
+
+    <style name="DeepPurpleTheme" parent="AppTheme">
+        <item name="button_color">@color/md_deep_purple_500</item>
+        <item name="button_colorPressed">@color/md_deep_purple_700</item>
+
+        <item name="colorPrimary">@color/md_deep_purple_500</item>
+        <item name="colorPrimaryDark">@color/md_deep_purple_700</item>
+        <item name="colorAccent">@color/md_deep_purple_500</item>
+        <item name="material_drawer_selected_text">@color/md_deep_purple_500</item>
+    </style>
+
+    <style name="BlueTheme" parent="AppTheme">
+        <item name="button_color">@color/md_blue_500</item>
+        <item name="button_colorPressed">@color/md_blue_700</item>
+
+        <item name="colorPrimary">@color/md_blue_500</item>
+        <item name="colorPrimaryDark">@color/md_blue_700</item>
+        <item name="colorAccent">@color/md_blue_500</item>
+        <item name="material_drawer_selected_text">@color/md_blue_500</item>
+    </style>
+
+    <style name="LightBlueTheme" parent="AppTheme">
+        <item name="button_color">@color/md_light_blue_500</item>
+        <item name="button_colorPressed">@color/md_light_blue_700</item>
+
+        <item name="colorPrimary">@color/md_light_blue_500</item>
+        <item name="colorPrimaryDark">@color/md_light_blue_700</item>
+        <item name="colorAccent">@color/md_light_blue_500</item>
+        <item name="material_drawer_selected_text">@color/md_light_blue_500</item>
+    </style>
+
+    <style name="CyanTheme" parent="AppTheme">
+        <item name="button_color">@color/md_cyan_500</item>
+        <item name="button_colorPressed">@color/md_cyan_700</item>
+
+        <item name="colorPrimary">@color/md_cyan_500</item>
+        <item name="colorPrimaryDark">@color/md_cyan_700</item>
+        <item name="colorAccent">@color/md_cyan_500</item>
+        <item name="material_drawer_selected_text">@color/md_cyan_500</item>
+    </style>
+
+    <style name="TealTheme" parent="AppTheme">
+        <item name="button_color">@color/md_teal_500</item>
+        <item name="button_colorPressed">@color/md_teal_700</item>
+
+        <item name="colorPrimary">@color/md_teal_500</item>
+        <item name="colorPrimaryDark">@color/md_teal_700</item>
+        <item name="colorAccent">@color/md_teal_500</item>
+        <item name="material_drawer_selected_text">@color/md_teal_500</item>
+    </style>
+
+    <style name="GreenTheme" parent="AppTheme">
+        <item name="button_color">@color/md_green_500</item>
+        <item name="button_colorPressed">@color/md_green_700</item>
+
+        <item name="colorPrimary">@color/md_green_500</item>
+        <item name="colorPrimaryDark">@color/md_green_700</item>
+        <item name="colorAccent">@color/md_green_500</item>
+        <item name="material_drawer_selected_text">@color/md_green_500</item>
+    </style>
+
+    <style name="LightGreenTheme" parent="AppTheme">
+        <item name="button_color">@color/md_light_green_500</item>
+        <item name="button_colorPressed">@color/md_light_green_700</item>
+
+        <item name="colorPrimary">@color/md_light_green_500</item>
+        <item name="colorPrimaryDark">@color/md_light_green_700</item>
+        <item name="colorAccent">@color/md_light_green_500</item>
+        <item name="material_drawer_selected_text">@color/md_light_green_500</item>
+    </style>
+
+    <style name="LimeTheme" parent="AppTheme">
+        <item name="button_color">@color/md_lime_500</item>
+        <item name="button_colorPressed">@color/md_lime_700</item>
+
+        <item name="colorPrimary">@color/md_lime_500</item>
+        <item name="colorPrimaryDark">@color/md_lime_700</item>
+        <item name="colorAccent">@color/md_lime_500</item>
+        <item name="material_drawer_selected_text">@color/md_lime_500</item>
+    </style>
+
+    <style name="YellowTheme" parent="AppTheme">
+        <item name="button_color">@color/md_yellow_500</item>
+        <item name="button_colorPressed">@color/md_yellow_700</item>
+
+        <item name="colorPrimary">@color/md_yellow_500</item>
+        <item name="colorPrimaryDark">@color/md_yellow_700</item>
+        <item name="colorAccent">@color/md_yellow_500</item>
+        <item name="material_drawer_selected_text">@color/md_yellow_500</item>
+    </style>
+
+    <style name="AmberTheme" parent="AppTheme">
+        <item name="button_color">@color/md_amber_500</item>
+        <item name="button_colorPressed">@color/md_amber_700</item>
+
+        <item name="colorPrimary">@color/md_amber_500</item>
+        <item name="colorPrimaryDark">@color/md_amber_700</item>
+        <item name="colorAccent">@color/md_amber_500</item>
+        <item name="material_drawer_selected_text">@color/md_amber_500</item>
+        <item name="colorControlActivated">@color/action_mode</item>
+    </style>
+
+    <style name="OrangeTheme" parent="AppTheme">
+        <item name="button_color">@color/md_orange_500</item>
+        <item name="button_colorPressed">@color/md_orange_700</item>
+
+        <item name="colorPrimary">@color/md_orange_500</item>
+        <item name="colorPrimaryDark">@color/md_orange_700</item>
+        <item name="colorAccent">@color/md_orange_500</item>
+        <item name="material_drawer_selected_text">@color/md_orange_500</item>
+    </style>
+
+    <style name="DeepOrangeTheme" parent="AppTheme">
+        <item name="button_color">@color/md_deep_orange_500</item>
+        <item name="button_colorPressed">@color/md_deep_orange_700</item>
+
+        <item name="colorPrimary">@color/md_deep_orange_500</item>
+        <item name="colorPrimaryDark">@color/md_deep_orange_700</item>
+        <item name="colorAccent">@color/md_deep_orange_500</item>
+        <item name="material_drawer_selected_text">@color/md_deep_orange_500</item>
+    </style>
+
+    <style name="IndigoThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_indigo_500</item>
+    </style>
+
+    <style name="GreyThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_grey_500</item>
+    </style>
+
+    <style name="GreyDarkThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_grey_800</item>
+    </style>
+
+    <style name="BlackThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_black_1000</item>
+    </style>
+
+    <style name="BlueGreyThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_blue_grey_500</item>
+    </style>
+
+    <style name="BrownThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_brown_500</item>
+    </style>
+
+    <style name="RedThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_red_500</item>
+    </style>
+
+    <style name="PinkThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_pink_500</item>
+    </style>
+
+    <style name="PurpleThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_purple_500</item>
+    </style>
+
+    <style name="DeepPurpleThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_deep_purple_500</item>
+    </style>
+
+    <style name="BlueThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_blue_500</item>
+    </style>
+
+    <style name="LightBlueThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_light_blue_500</item>
+    </style>
+
+    <style name="CyanThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_cyan_500</item>
+    </style>
+
+    <style name="TealThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_teal_500</item>
+    </style>
+
+    <style name="GreenThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_green_500</item>
+    </style>
+
+    <style name="LightGreenThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_light_green_500</item>
+    </style>
+
+    <style name="LimeThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_lime_500</item>
+    </style>
+
+    <style name="YellowThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_yellow_500</item>
+    </style>
+
+    <style name="AmberThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_amber_500</item>
+    </style>
+
+    <style name="OrangeThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_orange_500</item>
+    </style>
+
+    <style name="DeepOrangeThemeDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/md_deep_orange_500</item>
+        <item name="mdtp_accent_color">@color/md_deep_orange_500</item>
+        <item name="mdtp_accent_color_dark">@color/md_deep_orange_500</item>
+    </style>
+
+</resources>

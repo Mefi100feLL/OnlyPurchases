@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_no_lists"
+        android:id="@+id/fragment_menu_textview_empty"
+        android:drawablePadding="16dp"
+        android:drawableTop="@drawable/ic_no_lists"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_menu_progressbar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_menu_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingTop="8dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:id="@+id/fragment_menu_layout_snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </FrameLayout>
+
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/fragment_menu_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fragment_menu_layout_snackbar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:image="@drawable/ic_add_white_24dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

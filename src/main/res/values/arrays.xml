@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="types_of_sending_list">
+        <item >по SMS</item>
+        <item >по e-mail</item>
+        <item >как текст</item>
+    </string-array>
+    
+    <string-array name="prod_categories">
+		<item>Молочные изделия, сыр, яйца</item>
+		<item>Хлеб, булка, выпечка</item>
+		<item>Мясные, рыбные и куриные продукты</item>
+		<item>Замороженные продукты</item>
+		<item>Кулинария</item>
+		<item>Овощи, фрукты, ягоды</item>
+		<item>Безалкогольные напитки</item>
+		<item>Алкоголь</item>
+		<item>Сладости, бакалея, консервы</item>
+		<item>Корм для животных</item>
+		<item>Детское питание</item>
+	</string-array>
+	
+	<string-array name="prom_categories">
+		<item>Бытовая химия</item>
+		<item>Дом, кухня</item>
+		<item>Домашние животные</item>
+		<item>Инструменты</item>
+		<item>Канцелярские товары</item>
+		<item>Косметика и здоровье</item>
+		<item>Одежда</item>
+		<item>Мебель</item>
+		<item>Сад</item>
+		<item>Спорт</item>
+		<item>Товары для детей</item>
+		<item>Цветы и подарки</item>
+		<item>Электроника, бытовая техника, компьютеры</item>
+		<item>Другое</item>
+	</string-array>
+	
+	<string-array name="prod_categories_ids">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>6</item>
+		<item>4</item>
+		<item>5</item>
+		<item>8</item>
+		<item>9</item>
+		<item>7</item>
+		<item>10</item>
+		<item>11</item>
+	</string-array>
+	
+	<string-array name="prom_categories_ids">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+		<item>6</item>
+		<item>8</item>
+		<item>7</item>
+		<item>9</item>
+		<item>10</item>
+		<item>11</item>
+		<item>12</item>
+		<item>13</item>
+		<item>14</item>
+	</string-array>
+	
+	<string-array name="navigation_menu_items">
+		<item >Акции</item>
+		<item >Списки</item>
+		<item >Все товары</item>
+		<item >Настройки</item>
+	</string-array>
+	
+	<string-array name="sortarray">
+		<item>@string/prefs_default_sort_listitem_one</item>
+		<item>@string/prefs_default_sort_listitem_two</item>
+		<item>@string/prefs_default_sort_listitem_three</item>
+	</string-array>
+
+	<string-array name="sorts_of_list">
+		<item>@string/prefs_default_sort_list_one</item>
+		<item>@string/prefs_default_sort_list_two</item>
+	</string-array>
+	
+	<string-array name="sizes">
+		<item>10</item>
+		<item>12</item>
+		<item>14</item>
+		<item>16</item>
+		<item>18</item>
+		<item>20</item>
+		<item>22</item>
+		<item>24</item>
+		<item>26</item>
+		<item>28</item>
+		<item>30</item>
+	</string-array>
+
+	<array name="colors">
+		<item>@color/md_indigo_500</item>
+		<item>@color/md_grey_500</item>
+		<item>@color/md_grey_800</item>
+		<item>@color/md_black_1000</item>
+		<item>@color/md_blue_grey_500</item>
+		<item>@color/md_brown_500</item>
+		<item>@color/md_red_500</item>
+		<item>@color/md_pink_500</item>
+		<item>@color/md_purple_500</item>
+		<item>@color/md_deep_purple_500</item>
+		<item>@color/md_blue_500</item>
+		<item>@color/md_light_blue_500</item>
+		<item>@color/md_cyan_500</item>
+		<item>@color/md_teal_500</item>
+		<item>@color/md_green_500</item>
+		<item>@color/md_light_green_500</item>
+		<item>@color/md_lime_500</item>
+		<item>@color/md_yellow_500</item>
+		<item>@color/md_amber_500</item>
+		<item>@color/md_orange_500</item>
+		<item>@color/md_deep_orange_500</item>
+	</array>
+
+	<array name="themes">
+		<item>@style/IndigoTheme</item>
+		<item>@style/GreyTheme</item>
+		<item>@style/GreyDarkTheme</item>
+		<item>@style/BlackTheme</item>
+		<item>@style/BlueGreyTheme</item>
+		<item>@style/BrownTheme</item>
+		<item>@style/RedTheme</item>
+		<item>@style/PinkTheme</item>
+		<item>@style/PurpleTheme</item>
+		<item>@style/DeepPurpleTheme</item>
+		<item>@style/BlueTheme</item>
+		<item>@style/LightBlueTheme</item>
+		<item>@style/CyanTheme</item>
+		<item>@style/TealTheme</item>
+		<item>@style/GreenTheme</item>
+		<item>@style/LightGreenTheme</item>
+		<item>@style/LimeTheme</item>
+		<item>@style/YellowTheme</item>
+		<item>@style/AmberTheme</item>
+		<item>@style/OrangeTheme</item>
+		<item>@style/DeepOrangeTheme</item>
+	</array>
+
+	<array name="dialog_themes">
+		<item>@style/IndigoThemeDialog</item>
+		<item>@style/GreyThemeDialog</item>
+		<item>@style/GreyDarkThemeDialog</item>
+		<item>@style/BlackThemeDialog</item>
+		<item>@style/BlueGreyThemeDialog</item>
+		<item>@style/BrownThemeDialog</item>
+		<item>@style/RedThemeDialog</item>
+		<item>@style/PinkThemeDialog</item>
+		<item>@style/PurpleThemeDialog</item>
+		<item>@style/DeepPurpleThemeDialog</item>
+		<item>@style/BlueThemeDialog</item>
+		<item>@style/LightBlueThemeDialog</item>
+		<item>@style/CyanThemeDialog</item>
+		<item>@style/TealThemeDialog</item>
+		<item>@style/GreenThemeDialog</item>
+		<item>@style/LightGreenThemeDialog</item>
+		<item>@style/LimeThemeDialog</item>
+		<item>@style/YellowThemeDialog</item>
+		<item>@style/AmberThemeDialog</item>
+		<item>@style/OrangeThemeDialog</item>
+		<item>@style/DeepOrangeThemeDialog</item>
+	</array>
+
+	<array name="headers">
+		<item>@drawable/indigo</item>
+		<item>@drawable/dark_grey</item>
+		<item>@drawable/dark_grey</item>
+		<item>@drawable/black</item>
+		<item>@drawable/blue_grey</item>
+		<item>@drawable/brown</item>
+		<item>@drawable/red</item>
+		<item>@drawable/pink</item>
+		<item>@drawable/purple</item>
+		<item>@drawable/deep_purple</item>
+		<item>@drawable/blue</item>
+		<item>@drawable/light_blue</item>
+		<item>@drawable/cyan</item>
+		<item>@drawable/teal</item>
+		<item>@drawable/green</item>
+		<item>@drawable/light_green</item>
+		<item>@drawable/lime</item>
+		<item>@drawable/yellow</item>
+		<item>@drawable/amber</item>
+		<item>@drawable/orange</item>
+		<item>@drawable/orange</item>
+	</array>
+</resources>

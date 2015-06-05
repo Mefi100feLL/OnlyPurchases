@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata"
+	generated="2014-06-24T22:04:39">
+	<city>
+		<name>Московская область</name>
+		<id>1</id>
+	</city>
+	<city>
+		<name>Ленинградская область</name>
+		<id>2</id>
+	</city>
+	<city>
+		<name>Алтайсий край</name>
+		<id>56</id>
+	</city>
+	<city>
+		<name>Астраханская область</name>
+		<id>3</id>
+	</city>
+	<city>
+		<name>Белгородская область</name>
+		<id>44</id>
+	</city>
+	<city>
+		<name>Брянская область</name>
+		<id>4</id>
+	</city>
+	<city>
+		<name>Владимирская область</name>
+		<id>38</id>
+	</city>
+	<city>
+		<name>Волгоградская область</name>
+		<id>5</id>
+	</city>
+	<city>
+		<name>Вологодская область</name>
+		<id>41</id>
+	</city>
+	<city>
+		<name>Воронежская область</name>
+		<id>6</id>
+	</city>
+	<city>
+		<name>Ивановская область</name>
+		<id>8</id>
+	</city>
+	<city>
+		<name>Калужская область</name>
+		<id>10</id>
+	</city>
+	<city>
+		<name>Кемеровская область</name>
+		<id>19</id>
+	</city>
+	<city>
+		<name>Кировская область</name>
+		<id>11</id>
+	</city>
+	<city>
+		<name>Костромская область</name>
+		<id>31</id>
+	</city>
+	<city>
+		<name>Краснодарский край</name>
+		<id>13</id>
+	</city>
+	<city>
+		<name>Курганская область</name>
+		<id>54</id>
+	</city>
+	<city>
+		<name>Курская область</name>
+		<id>15</id>
+	</city>
+	<city>
+		<name>Липецкая область</name>
+		<id>16</id>
+	</city>
+	<city>
+		<name>Мурманская область</name>
+		<id>43</id>
+	</city>
+	<city>
+		<name>Нижегородская область</name>
+		<id>18</id>
+	</city>
+	<city>
+		<name>Новгородская область</name>
+		<id>39</id>
+	</city>
+	<city>
+		<name>Новосибирская область</name>
+		<id>20</id>
+	</city>
+	<city>
+		<name>Омская область</name>
+		<id>21</id>
+	</city>
+	<city>
+		<name>Оренбургская область</name>
+		<id>22</id>
+	</city>
+	<city>
+		<name>Орловская область</name>
+		<id>57</id>
+	</city>
+	<city>
+		<name>Пензенская область</name>
+		<id>23</id>
+	</city>
+	<city>
+		<name>Пермский край</name>
+		<id>24</id>
+	</city>
+	<city>
+		<name>Псковская область</name>
+		<id>40</id>
+	</city>
+	<city>
+		<name>Ростовская область</name>
+		<id>25</id>
+	</city>
+	<city>
+		<name>Рязанская область</name>
+		<id>26</id>
+	</city>
+	<city>
+		<name>Самарская область</name>
+		<id>27</id>
+	</city>
+	<city>
+		<name>Саратовская область</name>
+		<id>28</id>
+	</city>
+	<city>
+		<name>Свердловская область</name>
+		<id>7</id>
+	</city>
+	<city>
+		<name>Смоленская область</name>
+		<id>45</id>
+	</city>
+	<city>
+		<name>Ставропольский край</name>
+		<id>29</id>
+	</city>
+	<city>
+		<name>Тамбовская область</name>
+		<id>52</id>
+	</city>
+	<city>
+		<name>Тверская область</name>
+		<id>30</id>
+	</city>
+	<city>
+		<name>Томская область</name>
+		<id>55</id>
+	</city>
+	<city>
+		<name>Тульская область</name>
+		<id>32</id>
+	</city>
+	<city>
+		<name>Тюменская область</name>
+		<id>33</id>
+	</city>
+	<city>
+		<name>Ульяновская область</name>
+		<id>34</id>
+	</city>
+	<city>
+		<name>Ханты-мансийский АО</name>
+		<id>59</id>
+	</city>
+	<city>
+		<name>Челябинская область</name>
+		<id>36</id>
+	</city>
+	<city>
+		<name>Ярославская область</name>
+		<id>37</id>
+	</city>
+	<city>
+		<name>Республика Адыгея</name>
+		<id>53</id>
+	</city>
+	<city>
+		<name>Республика Башкортостан</name>
+		<id>35</id>
+	</city>
+	<city>
+		<name>Республика Кабардино-Балкария</name>
+		<id>60</id>
+	</city>
+	<city>
+		<name>Республика Калмыкия</name>
+		<id>46</id>
+	</city>
+	<city>
+		<name>Республика Карачаево-Черкесия</name>
+		<id>48</id>
+	</city>
+	<city>
+		<name>Республика Карелия</name>
+		<id>42</id>
+	</city>
+	<city>
+		<name>Республика Коми</name>
+		<id>61</id>
+	</city>
+	<city>
+		<name>Республика Марий Эл</name>
+		<id>49</id>
+	</city>
+	<city>
+		<name>Республика Мордовия</name>
+		<id>51</id>
+	</city>
+	<city>
+		<name>Республика Северная Осетия</name>
+		<id>47</id>
+	</city>
+	<city>
+		<name>Республика Татарстан</name>
+		<id>9</id>
+	</city>
+	<city>
+		<name>Республика Удмуртия</name>
+		<id>17</id>
+	</city>
+	<city>
+		<name>Республика Чувашия</name>
+		<id>50</id>
+	</city>
+</dataroot>
