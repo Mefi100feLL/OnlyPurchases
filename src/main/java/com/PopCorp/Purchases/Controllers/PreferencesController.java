@@ -589,39 +589,23 @@ public class PreferencesController {
     }
 
     private void showDialogForCategoryChange(final Category category) {
-        AlertDialogWrapper.Builder builder = new AlertDialogWrapper.Builder(context);
+        MaterialDialog.Builder builder = new MaterialDialog.Builder(context);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.dialog_color_picker, null);
-        builder.setView(layout);
-        builder.setTitle(R.string.dialog_title_editing_category);
+        builder.customView(layout, true);
+        builder.title(R.string.dialog_title_editing_category);
 
         final EditText edtext = (EditText) layout.findViewById(R.id.dialog_color_picker_edittext);
-        InputFilter[] FilterArray = new InputFilter[1];
-        FilterArray[0] = new InputFilter.LengthFilter(50);
-        edtext.setFilters(FilterArray);
-        edtext.setInputType(InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         edtext.setText(category.getName());
         final TextInputLayout inputLayout = (TextInputLayout) layout.findViewById(R.id.dialog_color_picker_input_layout);
         final GridLayout list = (GridLayout) layout.findViewById(R.id.content_gridlayout_with_colors);
         final int[] mColors = initializeGridLayout(list, category.getColor());
 
-        builder.setNeutralButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() {
+        builder.neutralText(R.string.dialog_cancel);
+        builder.callback(new MaterialDialog.ButtonCallback() {
             @Override
-            public void onClick(DialogInterface dialog, int which1) {
-                dialog.dismiss();
-            }
-        });
-        builder.autoDismiss(false);
-        builder.setNegativeButton(R.string.dialog_remove, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which1) {
-                category.removeFromDb(db);
-                dialog.dismiss();
-            }
-        });
-        builder.setPositiveButton(R.string.dialog_save, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which1) {
+            public void onPositive(MaterialDialog dialog) {
+                super.onPositive(dialog);
                 if (edtext.getText().toString().length() > 0) {
                     category.updateInDb(db, edtext.getText().toString(), mColors[selectedColor]);
                     dialog.dismiss();
@@ -629,14 +613,30 @@ public class PreferencesController {
                     inputLayout.setError(context.getString(R.string.notify_enter_name_of_category));
                 }
             }
+
+            @Override
+            public void onNegative(MaterialDialog dialog) {
+                super.onNegative(dialog);
+                category.removeFromDb(db);
+                dialog.dismiss();
+            }
+
+            @Override
+            public void onNeutral(MaterialDialog dialog) {
+                super.onNeutral(dialog);
+                dialog.dismiss();
+            }
         });
-        builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+        builder.autoDismiss(false);
+        builder.negativeText(R.string.dialog_remove);
+        builder.positiveText(R.string.dialog_save);
+        builder.dismissListener(new DialogInterface.OnDismissListener() {
             @Override
             public void onDismiss(DialogInterface dialog) {
                 showDialogWithCategories();
             }
         });
-        final Dialog dialog = builder.create();
+        final Dialog dialog = builder.build();
         edtext.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -673,31 +673,22 @@ public class PreferencesController {
     }
 
     private void showDialogForNewCategory() {
-        AlertDialogWrapper.Builder builder = new AlertDialogWrapper.Builder(context);
+        MaterialDialog.Builder builder = new MaterialDialog.Builder(context);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.dialog_color_picker, null);
 
-        builder.setView(layout);
-        builder.setTitle(R.string.dialog_title_new_category);
+        builder.customView(layout, true);
+        builder.title(R.string.dialog_title_new_category);
         final EditText editForCategoryName = (EditText) layout.findViewById(R.id.dialog_color_picker_edittext);
-        InputFilter[] FilterArray = new InputFilter[1];
-        FilterArray[0] = new InputFilter.LengthFilter(50);
-        editForCategoryName.setFilters(FilterArray);
-        editForCategoryName.setInputType(InputType.TYPE_TEXT_FLAG_CAP_SENTENCES);
         final TextInputLayout inputLayout = (TextInputLayout) layout.findViewById(R.id.dialog_color_picker_input_layout);
         final GridLayout list = (GridLayout) layout.findViewById(R.id.content_gridlayout_with_colors);
 
         final int[] mColors = initializeGridLayout(list, 0);
-        builder.setNegativeButton(R.string.dialog_cancel, new DialogInterface.OnClickListener() {
+        builder.negativeText(R.string.dialog_cancel);
+        builder.callback(new MaterialDialog.ButtonCallback() {
             @Override
-            public void onClick(DialogInterface dialog, int which) {
-                dialog.dismiss();
-            }
-        });
-        builder.autoDismiss(false);
-        builder.setPositiveButton(R.string.dialog_add, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
+            public void onPositive(MaterialDialog dialog) {
+                super.onPositive(dialog);
                 if (editForCategoryName.getText().toString().length() > 0) {
                     String name = editForCategoryName.getText().toString();
                     Category newCategory = new Category(-1, name, mColors[selectedColor]);
@@ -707,15 +698,23 @@ public class PreferencesController {
                     inputLayout.setError(context.getString(R.string.notify_enter_name_of_category));
                 }
             }
+
+            @Override
+            public void onNegative(MaterialDialog dialog) {
+                super.onNegative(dialog);
+                dialog.dismiss();
+            }
         });
-        builder.setOnDismissListener(new DialogInterface.OnDismissListener() {
+        builder.autoDismiss(false);
+        builder.positiveText(R.string.dialog_add);
+        builder.dismissListener(new DialogInterface.OnDismissListener() {
             @Override
             public void onDismiss(DialogInterface dialog) {
                 showDialogWithCategories();
             }
         });
 
-        final Dialog dialog = builder.create();
+        final Dialog dialog = builder.build();
         editForCategoryName.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {

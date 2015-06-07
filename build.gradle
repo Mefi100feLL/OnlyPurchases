@@ -15,15 +15,15 @@ android {
         applicationId "com.PopCorp.Purchases"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 19
-        versionName "3.0.2"
-        signingConfig signingConfigs.release
+        versionCode 20
+        versionName "3.0.3"
     }
     applicationVariants.all { variant ->
         variant.resValue "string", "versionName", variant.versionName
     }
     buildTypes {
         release {
+            debuggable false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             signingConfig signingConfigs.release

@@ -40,7 +40,7 @@ public class SmsMonitorService extends Service {
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         PendingIntent pi = PendingIntent.getActivity(context, 0, intentForStartActivity, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder notif = new NotificationCompat.Builder(context)
-                .setSmallIcon(R.drawable.ic_launcher)
+                .setSmallIcon(R.drawable.ic_mail_white_24dp)
                 .setAutoCancel(true)
                 .setContentText(context.getResources().getString(R.string.notify_new_shopping_list_on_sms_from) + " " + smsFrom)
                 .setContentTitle(title)

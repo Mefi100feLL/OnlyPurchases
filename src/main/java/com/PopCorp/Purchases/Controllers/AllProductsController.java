@@ -1,20 +1,33 @@
 package com.PopCorp.Purchases.Controllers;
 
 import android.app.Activity;
+import android.app.Dialog;
 import android.app.LoaderManager;
+import android.content.Context;
 import android.content.Loader;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.design.widget.TextInputLayout;
 import android.support.v7.widget.PopupMenu;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.Spinner;
 
 import com.PopCorp.Purchases.Activities.MainActivity;
 import com.PopCorp.Purchases.Adapters.AllProductsAdapter;
+import com.PopCorp.Purchases.Adapters.CategoriesAdapter;
 import com.PopCorp.Purchases.Adapters.ProductsAdapter;
+import com.PopCorp.Purchases.Data.ListItem;
 import com.PopCorp.Purchases.Data.Product;
 import com.PopCorp.Purchases.DataBase.DB;
 import com.PopCorp.Purchases.Fragments.AllProductsFragment;
@@ -28,7 +41,10 @@ import com.nispok.snackbar.listeners.ActionClickListener;
 import com.nispok.snackbar.listeners.EventListener;
 
 import java.lang.reflect.Field;
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class AllProductsController implements LoaderManager.LoaderCallbacks<Cursor> {
 
@@ -41,9 +57,11 @@ public class AllProductsController implements LoaderManager.LoaderCallbacks<Curs
     private final DB db;
     private final AllProductsAdapter adapter;
     private final ArrayList<Product> items = new ArrayList<>();
+    private final SharedPreferences.Editor editor;
     private String currentFilter = ProductsAdapter.FILTER_TYPE_NAMES;
     private Product editedItem;
     private Product removedItem;
+    private DialogForNewItem dialogForNewItem;
 
 
     public AllProductsController(Activity context, AllProductsFragment fragment, ViewGroup layoutForSnackBar) {
@@ -51,6 +69,7 @@ public class AllProductsController implements LoaderManager.LoaderCallbacks<Curs
         this.layoutForSnackBar = layoutForSnackBar;
         this.fragment = fragment;
         sPref = PreferenceManager.getDefaultSharedPreferences(context);
+        editor = sPref.edit();
         db = ((MainActivity) context).getDB();
 
         ArrayList<String> categories = getCategories();
@@ -245,8 +264,8 @@ public class AllProductsController implements LoaderManager.LoaderCallbacks<Curs
 
     private void startEditingItem(Product product) {
         editedItem = product;
-        fragment.putItemInFields(editedItem);
-        fragment.animationChangeFabFromAddToEdit();
+        dialogForNewItem = new DialogForNewItem(editedItem);
+        dialogForNewItem.show();
     }
 
     public void showToast(int text) {
@@ -373,7 +392,261 @@ public class AllProductsController implements LoaderManager.LoaderCallbacks<Curs
         dialog.show();
     }
 
-    public void setEditedItem(Product editedItem) {
-        this.editedItem = editedItem;
+    public void showDailogForNewItem() {
+        dialogForNewItem = new DialogForNewItem();
+        dialogForNewItem.show();
+    }
+
+    public DialogForNewItem getDialogForNewItem() {
+        return dialogForNewItem;
+    }
+
+    public class DialogForNewItem {
+
+        private Product item;
+        private ArrayList<String> edizmsForSpinner;
+        private TextInputLayout inputLayout;
+        private AutoCompleteTextView editName;
+        private EditText editCount;
+        private EditText editCoast;
+        private EditText editComment;
+        private ArrayAdapter<String> adapterForSpinnerEdizm;
+        private Spinner spinnerForEdizm;
+        private Spinner spinnerForCategory;
+        private ArrayList<String> shopesForSpinner;
+        private ArrayAdapter<String> adapterForSpinnerShop;
+        private Spinner spinnerForShop;
+        private CheckBox checkBoxForImportant;
+        private ArrayList<String> categories;
+        private CategoriesAdapter adapterForSpinnerCategory;
+
+        public DialogForNewItem(){}
+
+        public DialogForNewItem(Product item){
+            this.item = item;
+        }
+
+        public void show() {
+            final LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            View customView = inflater.inflate(R.layout.content_product_fields, null);
+
+            inputLayout = (TextInputLayout) customView.findViewById(R.id.content_product_fields_input_layout);
+
+            editName = (AutoCompleteTextView) customView.findViewById(R.id.content_product_fields_edittext_name);
+
+            ImageView buttonForVoice = (ImageView) customView.findViewById(R.id.content_product_fields_button_voice);
+
+            buttonForVoice.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    fragment.displaySpeechRecognizer();
+                }
+            });
+
+            editCount = (EditText) customView.findViewById(R.id.content_product_fields_edittext_count);
+            editCount.setText("1");
+
+            editCoast = (EditText) customView.findViewById(R.id.content_product_fields_edittext_coast);
+
+            editComment = (EditText) customView.findViewById(R.id.content_product_fields_edittext_comment);
+
+            ImageView buttonCountPlus = (ImageView) customView.findViewById(R.id.content_product_fields_count_plus);
+            ImageView buttonCountMinus = (ImageView) customView.findViewById(R.id.content_product_fields_count_minus);
+            buttonCountPlus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        BigDecimal count = new BigDecimal(editCount.getText().toString());
+                        count = count.add(new BigDecimal("1"));
+                        editCount.setText(count.toString());
+                    } catch (Exception ignored) {}
+                }
+            });
+
+            buttonCountMinus.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        BigDecimal count = new BigDecimal(editCount.getText().toString());
+                        if (count.doubleValue() >= 1) {
+                            count = count.subtract(new BigDecimal("1"));
+                            editCount.setText(count.toString());
+                        }
+                    } catch (Exception ignored) {
+                    }
+                }
+            });
+
+
+            edizmsForSpinner = new ArrayList<>(sPref.getStringSet(SD.PREFS_EDIZMS, new LinkedHashSet<String>()));
+
+            adapterForSpinnerEdizm = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, edizmsForSpinner);
+            adapterForSpinnerEdizm.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinnerForEdizm = (Spinner) customView.findViewById(R.id.content_product_fields_spinner_edizm);
+            spinnerForEdizm.setAdapter(adapterForSpinnerEdizm);
+            spinnerForEdizm.setSelection(getPositionForEdizm(sPref.getString(SD.PREFS_DEF_EDIZM, context.getResources().getString(R.string.default_unit_one))));
+
+            spinnerForEdizm.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                    editCoast.setHint(context.getResources().getString(R.string.string_coast_za_ed) + " " + spinnerForEdizm.getItemAtPosition(position));
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> arg0) {
+                }
+            });
+
+            categories = getCategories();
+            ArrayList<Integer> colors = getColors();
+
+            adapterForSpinnerCategory = new CategoriesAdapter(context, categories, colors);
+            adapterForSpinnerCategory.setDropDownViewResource(R.layout.item_list_category);
+            spinnerForCategory = (Spinner) customView.findViewById(R.id.content_product_fields_spinner_category);
+            spinnerForCategory.setAdapter(adapterForSpinnerCategory);
+            spinnerForCategory.setSelection(adapterForSpinnerCategory.getCount() - 1);
+
+            shopesForSpinner = new ArrayList<>(sPref.getStringSet(SD.PREFS_SHOPES, new LinkedHashSet<String>()));
+            shopesForSpinner.add(context.getResources().getString(R.string.string_no_shop));//add item for no shop
+
+            adapterForSpinnerShop = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, shopesForSpinner);
+            adapterForSpinnerShop.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            spinnerForShop = (Spinner) customView.findViewById(R.id.content_product_fields_spinner_shop);
+            spinnerForShop.setAdapter(adapterForSpinnerShop);
+            spinnerForShop.setSelection(shopesForSpinner.size()-1);
+
+            checkBoxForImportant = (CheckBox) customView.findViewById(R.id.content_product_fields_checkbox_important);
+
+            MaterialDialog.Builder builder = new MaterialDialog.Builder(context);
+            builder.customView(customView, true);
+            if (item!=null) {
+                builder.positiveText(R.string.dialog_edit);
+            } else{
+                builder.positiveText(R.string.dialog_add);
+            }
+            builder.negativeText(R.string.dialog_cancel);
+            builder.autoDismiss(false);
+            builder.backgroundColorRes(android.R.color.white);
+            builder.callback(new MaterialDialog.ButtonCallback() {
+                @Override
+                public void onPositive(MaterialDialog dialog) {
+                    if (!editName.getText().toString().isEmpty()) {
+                        String shop = (String) spinnerForShop.getSelectedItem();
+                        if (spinnerForShop.getSelectedItemPosition() == adapterForSpinnerShop.getCount() - 1) {
+                            shop = "";
+                        }
+                        boolean result = addNewProduct(
+                                editName.getText().toString(),
+                                editCount.getText().toString(),
+                                (String) spinnerForEdizm.getSelectedItem(),
+                                editCoast.getText().toString(),
+                                (String) spinnerForCategory.getSelectedItem(),
+                                shop,
+                                editComment.getText().toString(),
+                                String.valueOf(checkBoxForImportant.isChecked()));
+                        if (result) {
+                            dialogForNewItem = null;
+                            editedItem = null;
+                            dialog.dismiss();
+                        } else{
+                            inputLayout.setError(context.getString(R.string.notify_listitem_already_exists));
+                        }
+                    } else {
+                        inputLayout.setError(context.getString(R.string.notify_enter_name_of_listitem));
+                    }
+                }
+
+                @Override
+                public void onNegative(MaterialDialog dialog) {
+                    super.onNegative(dialog);
+                    dialogForNewItem = null;
+                    editedItem = null;
+                    dialog.dismiss();
+                }
+            });
+            if (item!=null){
+                putItemInFields(item);
+            }
+            Dialog dialog = builder.build();
+
+            dialog.setCanceledOnTouchOutside(false);
+            dialog.show();
+        }
+
+        private int getPositionForEdizm(String edizm) {
+            if (edizm == null) {
+                return adapterForSpinnerEdizm.getCount() - 1;
+            }
+            if (!edizmsForSpinner.contains(edizm)) {
+                if (edizm.equals("")) {
+                    return adapterForSpinnerEdizm.getCount() - 1;
+                }
+                edizmsForSpinner.add(0, edizm);
+                addNewEdizmToPrefs(edizm);
+            }
+            return adapterForSpinnerEdizm.getPosition(edizm);
+        }
+
+        private void addNewEdizmToPrefs(final String newEdizm) {
+            Set<String> edizmsFromPrefs = sPref.getStringSet(SD.PREFS_EDIZMS, new LinkedHashSet<String>());
+            if (edizmsFromPrefs != null) {
+                edizmsFromPrefs.add(newEdizm);
+            }
+            editor.putStringSet(SD.PREFS_EDIZMS, edizmsFromPrefs);
+            editor.commit();
+        }
+
+        private int getPositionForShop(String shop) {
+            if (shop == null) {
+                return adapterForSpinnerShop.getCount() - 1;
+            }
+            if (!shopesForSpinner.contains(shop)) {
+                if (shop.equals("")) {
+                    return adapterForSpinnerShop.getCount() - 1;
+                }
+                shopesForSpinner.add(0, shop);
+                addNewShopToPrefs(shop);
+            }
+            return adapterForSpinnerShop.getPosition(shop);
+        }
+
+        private void addNewShopToPrefs(final String newShop) {
+            Set<String> shopesFromPrefs = sPref.getStringSet(SD.PREFS_SHOPES, new LinkedHashSet<String>());
+            if (shopesFromPrefs != null) {
+                shopesFromPrefs.add(newShop);
+            }
+            editor.putStringSet(SD.PREFS_SHOPES, shopesFromPrefs);
+            editor.commit();
+        }
+
+        public void showError(int errorId) {
+            inputLayout.setError(context.getString(errorId));
+        }
+
+        public void setNameItem(String name){
+            editName.setText(name);
+        }
+
+        private void putItemInFields(Product item) {
+            editName.setText(item.getName());
+            inputLayout.setError(null);
+            editName.requestFocus();
+            editName.dismissDropDown();
+            editCount.setText(item.getCountInString());
+            spinnerForEdizm.setSelection(getPositionForEdizm(item.getEdizm()));
+            editCoast.setText(item.getCoastInString());
+            putCategoryInSpinner(item.getCategory());
+            spinnerForShop.setSelection(getPositionForShop(item.getShop()));
+            editComment.setText(item.getComment());
+            checkBoxForImportant.setChecked(item.isFavorite());
+        }
+
+        private void putCategoryInSpinner(String category) {
+            if (categories.contains(category)) {
+                spinnerForCategory.setSelection(adapterForSpinnerCategory.getItemPosition(category));
+            } else {
+                spinnerForCategory.setSelection(adapterForSpinnerCategory.getCount() - 1);
+            }
+        }
     }
 }

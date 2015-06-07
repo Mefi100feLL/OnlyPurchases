@@ -9,24 +9,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/background_light"
-        android:clickable="true"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:longClickable="true"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical">
+            android:layout_height="wrap_content">
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/content_product_fields_input_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:layout_marginRight="8dp"
                 android:layout_weight="1">
 
                 <AutoCompleteTextView
@@ -47,7 +40,8 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_for_buttons"
                 android:padding="8dp"
-                android:src="@drawable/ic_keyboard_voice_grey600_36dp" />
+                android:src="@drawable/ic_keyboard_voice_grey600_36dp"
+                android:layout_marginTop="12dp" />
 
         </LinearLayout>
 
@@ -113,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
             android:gravity="center_vertical"
-            android:weightSum="2">
+            android:weightSum="5">
 
             <EditText
                 android:id="@+id/content_product_fields_edittext_coast"
@@ -122,7 +116,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:hint="@string/content_coast_of_listitem"
                 android:inputType="numberDecimal"
                 android:maxLines="1"
@@ -133,15 +127,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginStart="4dp"
-                android:layout_weight="1"
+                android:layout_weight="3"
                 android:gravity="center_vertical|end">
 
                 <TextView
                     android:id="@+id/content_product_fields_textview_category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:singleLine="true"
@@ -171,7 +163,7 @@
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
-                android:text="@string/content_important_of_listitem" />
+                android:text="@string/string_favorite" />
 
             <Spinner
                 android:id="@+id/content_product_fields_spinner_shop"
@@ -192,10 +184,5 @@
             android:maxLines="1"
             android:singleLine="true" />
     </LinearLayout>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="4dp"
-        android:src="@drawable/shadow_top_light" />
 
 </LinearLayout>

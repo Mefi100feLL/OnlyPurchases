@@ -179,12 +179,9 @@ public class SalesInternetLoader extends AsyncTaskLoader<ArrayList<Sale>> {
 	
 	public static String getSubTitle(String page){
 		String subTitle = "";
-		Matcher matcher = Pattern.compile("<p class='larger'><strong>[^<]*</strong><br>[^<]+").matcher(page);
+		Matcher matcher = Pattern.compile("</strong><br>[^']+").matcher(page);
 		if (matcher.find()) {
-			Matcher matcher2 = Pattern.compile("<br>[^<]+").matcher(matcher.group());
-			if (matcher2.find()) {
-				subTitle=matcher2.group().substring(4).trim();
-			}
+			subTitle=matcher.group().substring(13, matcher.group().length()-17).trim();
 		}
 		return subTitle;
 	}

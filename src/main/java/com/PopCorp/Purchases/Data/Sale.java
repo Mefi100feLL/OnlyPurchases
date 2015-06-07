@@ -145,6 +145,7 @@ public class Sale {
 
 	public void setTitle(String title) {
 		if (!title.equals("") || this.title==null) {
+			title = title.replaceAll("<br />", " ");
 			title = title.replaceAll("[\\r|\\n]", " ");
 			title = title.replaceAll("&quot;", "\"");
 			this.title = title;
@@ -159,6 +160,7 @@ public class Sale {
 
 	public void setSubTitle(String subTitle) {
 		if (!subTitle.equals("") || this.subTitle==null) {
+			subTitle = subTitle.replaceAll("<br />", " ");
 			this.subTitle = subTitle;
 		}
 	}

@@ -50,7 +50,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> im
             controller.showActionMode();
             actionMode = cab;
             touchListener.setIgnore(true);
-            //currentActionMode.getMenuInflater().inflate(R.menu.popup_menu_for_item, menu);
             cab.setTitle(String.valueOf(selectedItems.size()));
             return true;
         }

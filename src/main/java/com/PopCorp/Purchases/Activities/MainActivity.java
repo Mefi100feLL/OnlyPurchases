@@ -88,6 +88,10 @@ public class MainActivity extends AppCompatActivity {
                     drawer.setSelectionByIdentifier(R.string.menu_settings);
                     return;
                 }
+                if (getIntent().getExtras().getString(ListFragment.INTENT_TO_LIST_DATELIST)!=null) {
+                    drawer.setSelectionByIdentifier(R.string.menu_lists);
+                    return;
+                }
             }
             if (getJsonFromData(getIntent().getData())!=null) {
                 drawer.setSelectionByIdentifier(R.string.menu_lists);
@@ -140,9 +144,12 @@ public class MainActivity extends AppCompatActivity {
                             if (getIntent().getData() != null) {
                                 Bundle args = new Bundle();
                                 args.putString(MenuFragment.ARGS_TEXT_FROM_JSON, getJsonFromData(getIntent().getData()));
+                                getIntent().setData(null);
                                 fragment.setArguments(args);
                             } else if (getIntent().getExtras() != null) {
-                                fragment.setArguments(getIntent().getExtras());
+                                Bundle args = getIntent().getExtras();
+                                getIntent().replaceExtras(new Bundle());
+                                fragment.setArguments(args);
                             }
                             FragmentManager fragmentManager = getFragmentManager();
                             fragmentManager.beginTransaction().replace(R.id.activity_main_content_frame, fragment, tag).commit();
@@ -229,12 +236,6 @@ public class MainActivity extends AppCompatActivity {
         if (findedFragment != null) {
             ((SalesFragment) findedFragment).onBackPressed();
             return;
-        }
-        findedFragment = fragmentManager.findFragmentByTag(AllProductsFragment.TAG);
-        if (findedFragment != null) {
-            if (((AllProductsFragment) findedFragment).onBackPressed()) {
-                return;
-            }
         }
         super.onBackPressed();
     }
